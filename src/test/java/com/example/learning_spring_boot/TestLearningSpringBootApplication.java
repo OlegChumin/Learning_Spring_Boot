@@ -12,32 +12,32 @@ import org.testcontainers.elasticsearch.ElasticsearchContainer;
 @TestConfiguration(proxyBeanMethods = false)
 public class TestLearningSpringBootApplication {
 
-    @Bean
-    @ServiceConnection
-    CassandraContainer<?> cassandraContainer() {
-        return new CassandraContainer<>("cassandra:latest");
-    }
+	@Bean
+	@ServiceConnection
+	CassandraContainer<?> cassandraContainer() {
+		return new CassandraContainer<>("cassandra:latest");
+	}
 
-    @Bean
-    @ServiceConnection
-    ElasticsearchContainer elasticsearchContainer() {
-        return new ElasticsearchContainer("docker.elastic.co/elasticsearch/elasticsearch:7.17.10");
-    }
+	@Bean
+	@ServiceConnection
+	ElasticsearchContainer elasticsearchContainer() {
+		return new ElasticsearchContainer("docker.elastic.co/elasticsearch/elasticsearch:7.17.10");
+	}
 
-    @Bean
-    @ServiceConnection
-    MongoDBContainer mongoDbContainer() {
-        return new MongoDBContainer("mongo:latest");
-    }
+	@Bean
+	@ServiceConnection
+	MongoDBContainer mongoDbContainer() {
+		return new MongoDBContainer("mongo:latest");
+	}
 
-    @Bean
-    @ServiceConnection
-    PostgreSQLContainer<?> postgresContainer() {
-        return new PostgreSQLContainer<>("postgres:latest");
-    }
+	@Bean
+	@ServiceConnection
+	PostgreSQLContainer<?> postgresContainer() {
+		return new PostgreSQLContainer<>("postgres:latest");
+	}
 
-    public static void main(String[] args) {
-        SpringApplication.from(LearningSpringBootApplication::main).with(TestLearningSpringBootApplication.class).run(args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.from(LearningSpringBootApplication::main).with(TestLearningSpringBootApplication.class).run(args);
+	}
 
 }

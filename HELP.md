@@ -1,7 +1,6 @@
 # Getting Started
 
 ### Reference Documentation
-
 For further reference, please consider the following sections:
 
 * [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
@@ -66,7 +65,6 @@ For further reference, please consider the following sections:
 * [Spring Data MongoDB](https://docs.spring.io/spring-boot/docs/3.1.2/reference/htmlsingle/#data.nosql.mongodb)
 
 ### Guides
-
 The following guides illustrate how to use some features concretely:
 
 * [Creating CRUD UI with Vaadin](https://spring.io/guides/gs/crud-with-vaadin/)
@@ -99,19 +97,16 @@ The following guides illustrate how to use some features concretely:
 * [Accessing Data with MongoDB](https://spring.io/guides/gs/accessing-data-mongodb/)
 
 ### Additional Links
-
 These additional references should also help you:
 
 * [Configure AOT settings in Build Plugin](https://docs.spring.io/spring-boot/docs/3.1.2/maven-plugin/reference/htmlsingle/#aot)
 
 ### Docker Compose support
-
 This project contains a Docker Compose file named `compose.yaml`.
 In this file, the following services have been defined:
 
 * cassandra: [`cassandra:latest`](https://hub.docker.com/_/cassandra)
-*
-elasticsearch: [`docker.elastic.co/elasticsearch/elasticsearch:7.17.10`](https://www.docker.elastic.co/r/elasticsearch)
+* elasticsearch: [`docker.elastic.co/elasticsearch/elasticsearch:7.17.10`](https://www.docker.elastic.co/r/elasticsearch)
 * mongodb: [`mongo:latest`](https://hub.docker.com/_/mongo)
 * postgres: [`postgres:latest`](https://hub.docker.com/_/postgres)
 
@@ -123,7 +118,6 @@ This project has been configured to let you generate either a lightweight contai
 It is also possible to run your tests in a native image.
 
 ### Lightweight Container with Cloud Native Buildpacks
-
 If you're already familiar with Spring Boot container images support, this is the easiest way to get started.
 Docker should be installed and configured on your machine prior to creating the image.
 
@@ -140,7 +134,6 @@ $ docker run --rm -p 8080:8080 Learning_Spring_Boot:0.0.1-SNAPSHOT
 ```
 
 ### Executable with Native Build Tools
-
 Use this option if you want to explore more options such as running your tests in a native image.
 The GraalVM `native-image` compiler should be installed and configured on your machine.
 
@@ -153,7 +146,6 @@ $ ./mvnw native:compile -Pnative
 ```
 
 Then, you can run the app as follows:
-
 ```
 $ target/Learning_Spring_Boot
 ```
